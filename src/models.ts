@@ -35,3 +35,17 @@ export enum DarkPiece {
     WARG,
     TROLL
 }
+
+function darkStrength(piece: DarkPiece) {
+    switch (piece) {
+        case DarkPiece.BALROG:        return 5
+        case DarkPiece.SHELOB:        return 5
+        case DarkPiece.WITCH_KING:    return 5
+        case DarkPiece.FLYING_NAZGUL: return 3
+        case DarkPiece.BLACK_RIDER:   return 3
+        case DarkPiece.SARUMAN:       return 4
+        case DarkPiece.ORCS:          return 2
+        case DarkPiece.WARG:          return 2
+        case DarkPiece.TROLL:         return 9
+    }
+}
